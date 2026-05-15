@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: hsl(306, 70%, 84%);
+  border: 0.4rem solid hsl(306, 100%, 75%);
+  border-radius: 1.4rem;
+  padding: 0.8rem;
+}
+
+.text_extra-title {
+  font-size: 16.4rem;
+  font-family: Inter Bold;
+}
+.text_extra-subtitle {
+  font-size: 2.6rem;
+  font-family: Inter SemiBold;
+}
+.text_title {
+  font-size: 2rem;
+  font-family: Inter Regular;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 6px;
+  }
+}

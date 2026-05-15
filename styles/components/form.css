@@ -1,0 +1,84 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.form-setting {
+}
+.form-setting__difficult {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.form-setting__select {
+  background-color: hsl(306, 70%, 84%);
+  border: 0.4rem solid hsl(306, 100%, 75%);
+  border-radius: 1.4rem;
+  padding: 0.8rem;
+}
+.form-setting__label {
+  text-align: center;
+  color: hsl(306, 100%, 50%);
+}
+.form-setting__range {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.form-setting__min {
+  flex: 1 1 auto;
+  border-radius: 1.4rem;
+  padding: 0.8rem;
+}
+.form-setting__max {
+  flex: 1 1 auto;
+  border-radius: 1.4rem;
+  padding: 0.8rem;
+}
+.form-setting__start {
+}
+
+.form-game {
+}
+
+.form-game__clue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(306, 100%, 50%);
+}
+
+.clue__sprite {
+  flex: 1 1 auto;
+  width: 2rem;
+  height: 2rem;
+}
+.clue__text {
+  flex: 1 1 auto;
+}
+
+.form-game__input {
+  background-color: hsl(306, 70%, 84%);
+  border: 0.4rem solid hsl(306, 100%, 75%);
+  border-radius: 1.4rem;
+  padding: 0.8rem;
+}
+.form-game__buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  align-items: center;
+}
+.form-game__answer {
+  flex: 1 1 85%;
+}
+.form-game__leave {
+  flex: 1 1 10%;
+}

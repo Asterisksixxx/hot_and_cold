@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <section class="area">
+        <div class="area__wrapper">
+          <div class="area__body">
+            <div class="area__label">
+              <h1 class="text_extra-subtitle">Отгадай число</h1>
+            </div>
+            <h1 class="area__mystery-value text_extra-title"></h1>
+            <div class="area__image">
+              <svg class="area__sprite">
+                <use href="assets/sprite.svg#area__sprite"></use>
+              </svg>
+            </div>
+            <div class="area__timer timer _hide">
+              <h2 class="text_title">00:00:00</h2>
+            </div>
+            <form class="area__form-setting form-setting form" action="" hidden>
+              <div class="form-setting__difficult">
+                <div class="form-setting__label">
+                  <h2 class="text_title">Уровень сложности:</h2>
+                </div>
+                <select
+                  class="form-setting__select text_title"
+                  name="difficult"
+                >
+                  <option value="easy">легко</option>
+                  <option value="normal">нормально</option>
+                  <option value="hard">сложно</option>
+                </select>
+              </div>
+              <div class="form-setting__label">
+                <h2 class="text_title">Диапазон значений:</h2>
+              </div>
+              <div class="form-setting__range">
+                <input
+                  class="form-setting__min text_title"
+                  type="number"
+                  name="min"
+                  min="-10000"
+                  max="10000"
+                  placeholder="мин."
+                />
+                <input
+                  class="form-setting__max text_title"
+                  type="number"
+                  name="max"
+                  min="-10000"
+                  max="10000"
+                  placeholder="макс."
+                />
+              </div>
+              <button class="form-setting__start button" type="submit">
+                <h2 class="text_title">Старт</h2>
+              </button>
+            </form>
+            <form class="area__form-game form-game form _hide" action="">
+              <div class="form-game__clue clue">
+                <svg class="clue__sprite">
+                  <use class="clue__use" href="assets/sprite.svg#"></use>
+                </svg>
+                <h2 class="clue__text text_title" name="clue__text"></h2>
+              </div>
+              <input
+                class="form-game__input text_title"
+                type="number"
+                name="answer"
+                required
+              />
+              <div class="form-game__buttons">
+                <button class="form-game__answer button" disabled="true">
+                  <h2 class="text_title">Дать ответ</h2>
+                </button>
+                <button class="form-game__leave button">
+                  <h2 class="text_title">Сдаться</h2>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script type="module" src="/scripts/index.js"></script>
+</html>
+<!-- <input type="range" min="0" max="10000" class="form__settings" /> -->

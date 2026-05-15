@@ -1,0 +1,7 @@
+@import "/styles/reset.css";
+@import "/styles/common.css";
+@import "/styles/fonts.css";
+
+/* components */
+@import "/styles/components/form.css";
+@import "/styles/components/area.css";

@@ -1,0 +1,72 @@
+.area {
+}
+.area__wrapper {
+}
+.area__body {
+  height: 70vh;
+  max-width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1.2rem;
+  padding: 2rem;
+  background-color: hsl(306, 5%, 84%);
+  border-radius: 1.4rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.area__label {
+  text-align: center;
+  color: hsl(306, 100%, 50%);
+  font-size: 2.6rem;
+  font-family: Inter SemiBold;
+}
+
+.area__mystery-value {
+  text-align: center;
+  color: hsl(206, 100%, 50%);
+}
+.area__image {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area__sprite {
+  height: min(30vh, 1000px);
+  width: min(30vh, 1000px);
+  color: hsl(306, 100%, 75%);
+}
+.area__sprite_wrong {
+  color: hsl(343, 100%, 66%);
+  animation: shake 1s ease;
+}
+@keyframes shake {
+  0% {
+    transform: scale(1.05) rotate(20deg);
+  }
+  30% {
+    transform: scale(0.9) rotate(-25deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(25deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.area__timer {
+  text-align: center;
+  color: hsl(306, 100%, 50%);
+}
+
+.area__form_setting {
+}
+
+.area__form_game {
+}
+._hide {
+  display: none;
+}
