@@ -5,6 +5,7 @@ import {
   $areaValue,
   $buttonAnswer,
   $clueFormGame,
+  $clueSprite,
   $clueUse,
   $formGame,
   $formSetting,
@@ -149,6 +150,7 @@ const getFocusOnGameInput = () => {
 const updateFormGame = () => {
   $formGame.answer.min = $formSetting.min.value || -10000;
   $formGame.answer.max = $formSetting.max.value || 10000;
+  $clueSprite.textContent = "";
 };
 
 const closeGame = () => {
